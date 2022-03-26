@@ -1,0 +1,12 @@
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\Demo.Shared.deps.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\Demo.Shared.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\ref\Demo.Shared.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\Demo.Shared.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.csprojAssemblyReference.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.AssemblyInfoInputs.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.AssemblyInfo.cs
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\ref\Demo.Shared.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.pdb

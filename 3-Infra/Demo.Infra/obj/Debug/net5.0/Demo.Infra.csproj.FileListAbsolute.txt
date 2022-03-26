@@ -1,0 +1,12 @@
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\Demo.Infra.deps.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\Demo.Infra.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\ref\Demo.Infra.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\Demo.Infra.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.csprojAssemblyReference.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.AssemblyInfoInputs.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.AssemblyInfo.cs
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\ref\Demo.Infra.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.pdb
