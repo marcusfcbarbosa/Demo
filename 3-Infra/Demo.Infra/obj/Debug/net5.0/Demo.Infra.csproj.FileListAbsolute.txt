@@ -10,3 +10,6 @@ C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\D
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\ref\Demo.Infra.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\Demo.Infra.runtimeconfig.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\bin\Debug\net5.0\Demo.Infra.runtimeconfig.dev.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\3-Infra\Demo.Infra\obj\Debug\net5.0\Demo.Infra.genruntimeconfig.cache

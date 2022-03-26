@@ -5,23 +5,25 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Api", "1-Api", "{F27ED88D-C34A-4F51-BA24-510D86AC605A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.WebApi", "1-Api\Demo.WebApi\Demo.WebApi.csproj", "{106A0C27-18D5-4A9A-99BA-871AC3F606F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.WebApi", "1-Api\Demo.WebApi\Demo.WebApi.csproj", "{106A0C27-18D5-4A9A-99BA-871AC3F606F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Domain", "2-Domain", "{A5134328-46B7-47B0-87F2-5732E1CF213D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Domain", "2-Domain\Demo.Domain\Demo.Domain.csproj", "{839943C8-2722-46FC-8C98-CB148CA7222D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain", "2-Domain\Demo.Domain\Demo.Domain.csproj", "{839943C8-2722-46FC-8C98-CB148CA7222D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infra", "3-Infra", "{37EB8780-A8FD-4944-9E07-9D656F94F0CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Infra", "3-Infra\Demo.Infra\Demo.Infra.csproj", "{92CD72B5-8525-4134-84AE-EDD74A44ECA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infra", "3-Infra\Demo.Infra\Demo.Infra.csproj", "{92CD72B5-8525-4134-84AE-EDD74A44ECA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Shared", "4-Shared", "{BEA30026-91D2-4C23-9CC4-3CF11AE9F5DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Shared", "4-Shared\Demo.Shared\Demo.Shared.csproj", "{51E937AA-C238-4C83-B34A-FC0E4BC716BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Shared", "4-Shared\Demo.Shared\Demo.Shared.csproj", "{51E937AA-C238-4C83-B34A-FC0E4BC716BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Tests", "5-Tests", "{27E931D5-D891-43D2-8774-AE7AAC5251FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Test", "5-Tests\Demo.Test\Demo.Test.csproj", "{56A47CBC-8958-40DD-AA2E-8A2C8ED279AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Test", "5-Tests\Demo.Test\Demo.Test.csproj", "{56A47CBC-8958-40DD-AA2E-8A2C8ED279AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Jobs", "6-Jobs", "{0918341E-D94F-44F9-881E-2844B3DC4258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,9 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{106A0C27-18D5-4A9A-99BA-871AC3F606F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -97,11 +96,17 @@ Global
 		{56A47CBC-8958-40DD-AA2E-8A2C8ED279AC}.Release|x86.ActiveCfg = Release|Any CPU
 		{56A47CBC-8958-40DD-AA2E-8A2C8ED279AC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{106A0C27-18D5-4A9A-99BA-871AC3F606F7} = {F27ED88D-C34A-4F51-BA24-510D86AC605A}
 		{839943C8-2722-46FC-8C98-CB148CA7222D} = {A5134328-46B7-47B0-87F2-5732E1CF213D}
 		{92CD72B5-8525-4134-84AE-EDD74A44ECA9} = {37EB8780-A8FD-4944-9E07-9D656F94F0CC}
 		{51E937AA-C238-4C83-B34A-FC0E4BC716BE} = {BEA30026-91D2-4C23-9CC4-3CF11AE9F5DF}
 		{56A47CBC-8958-40DD-AA2E-8A2C8ED279AC} = {27E931D5-D891-43D2-8774-AE7AAC5251FD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A42974D4-4F2E-42BF-9DA0-8DB7E1617CDB}
 	EndGlobalSection
 EndGlobal
