@@ -4,4 +4,24 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="FluentValidator" Version="2.0.4" />
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="StoreContext\Adapters\" />
+    <Folder Include="StoreContext\CommandHandlers\" />
+    <Folder Include="StoreContext\Commands\Inputs\" />
+    <Folder Include="StoreContext\Documents\" />
+    <Folder Include="StoreContext\Models\" />
+    <Folder Include="StoreContext\QueryHandlers\" />
+    <Folder Include="StoreContext\Queries\Inputs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Shared\Demo.Shared\Demo.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

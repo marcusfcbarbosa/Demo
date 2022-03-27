@@ -10,3 +10,6 @@ C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\ref\Demo.Shared.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\Demo.Shared.runtimeconfig.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\bin\Debug\net5.0\Demo.Shared.runtimeconfig.dev.json
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\4-Shared\Demo.Shared\obj\Debug\net5.0\Demo.Shared.genruntimeconfig.cache
