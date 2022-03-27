@@ -8,11 +8,14 @@
     <Folder Include="StoreContext\Adapters\" />
     <Folder Include="StoreContext\CommandHandlers\" />
     <Folder Include="StoreContext\Commands\Inputs\" />
-    <Folder Include="StoreContext\Entities\" />
     <Folder Include="StoreContext\Documents\" />
     <Folder Include="StoreContext\Models\" />
     <Folder Include="StoreContext\QueryHandlers\" />
     <Folder Include="StoreContext\Queries\Inputs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Shared\Demo.Shared\Demo.Shared.csproj" />
   </ItemGroup>
 
 </Project>
