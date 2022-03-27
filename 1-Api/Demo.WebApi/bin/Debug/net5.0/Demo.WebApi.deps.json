@@ -2150,6 +2150,7 @@
       },
       "Demo.Infra/1.0.0": {
         "dependencies": {
+          "Demo.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",

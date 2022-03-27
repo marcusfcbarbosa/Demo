@@ -1,5 +1,6 @@
 ﻿using Demo.Shared.Entities;
 using System;
+using System.Collections.Generic;
 
 namespace Demo.Domain.StoreContext.Entities
 {
@@ -20,5 +21,6 @@ namespace Demo.Domain.StoreContext.Entities
         public int Quantity { get; private set; }
         public string Description { get; private set; }
         public decimal Price { get; private set; }
+        public IEnumerable<Order> Orders { get; set; }
     }
 }

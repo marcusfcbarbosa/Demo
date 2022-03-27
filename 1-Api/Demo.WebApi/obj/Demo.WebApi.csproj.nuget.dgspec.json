@@ -205,7 +205,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Marcus\\Documents\\1-GithubRepositories\\codeMaze\\2-Domain\\Demo.Domain\\Demo.Domain.csproj": {
+                "projectPath": "C:\\Users\\Marcus\\Documents\\1-GithubRepositories\\codeMaze\\2-Domain\\Demo.Domain\\Demo.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
