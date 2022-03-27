@@ -10,3 +10,6 @@ C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\obj
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\obj\Debug\net5.0\Demo.Domain.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\obj\Debug\net5.0\ref\Demo.Domain.dll
 C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\obj\Debug\net5.0\Demo.Domain.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\bin\Debug\net5.0\Demo.Shared.dll
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\bin\Debug\net5.0\Demo.Shared.pdb
+C:\Users\Marcus\Documents\1-GithubRepositories\codeMaze\2-Domain\Demo.Domain\obj\Debug\net5.0\Demo.Domain.csproj.CopyComplete
