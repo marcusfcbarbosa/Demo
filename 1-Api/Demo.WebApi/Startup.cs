@@ -1,16 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Demo.Infra.NOSQLContexts;
+using Demo.Infra.SQLContexts;
+using Demo.Shared.BackgroundTasks;
+using Demo.WebApi.Auth;
+using Demo.WebApi.InfraEstructure;
+using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
+using System.Text;
 
 namespace Demo.WebApi
 {
@@ -28,10 +31,57 @@ namespace Demo.WebApi
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
+            services.AddHttpClient();
+            services.Configure<ConfigDB>(
+               x =>
+               {
+                   x.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                   x.DataBase = Configuration.GetSection("MongoConnection:DataBase").Value;
+               });
+            services.AddDbContext<SQLDemoContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //RegisteringDependencies(services);
+            DocumentingAPI(services);
+            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            services.AddAuthentication(x =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo.WebApi", Version = "v1" });
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
             });
+
+        }
+        public void DocumentingAPI(IServiceCollection services)
+        {
+            services.AddSwaggerDocumentation();
+        }
+        public void RegisteringDependencies(IServiceCollection services)
+        {
+            #region"Contexto"
+            services.AddScoped<SQLDemoContext, SQLDemoContext>();
+            #endregion
+
+            #region"Repositórios"
+            //services.AddScoped<IPedidoRepository, PedidoRepository>();
+            //services.AddScoped<IMongoPedidoRepository, MongoPedidoRepository>();
+            #endregion
+
+            #region"mediator"
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+            //services.AddMediatR(typeof(CriaPedidoCommand).GetTypeInfo().Assembly);
+            #endregion
+            services.AddSingleton<BackgroundTask>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,17 +89,16 @@ namespace Demo.WebApi
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Demo.WebApi v1"));
+                app.UseSwaggerDocumentation();
             }
-
-            app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseMiddleware<AuthMiddleware>();
+            app.UseCors(x => x
+                      .AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader());
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
