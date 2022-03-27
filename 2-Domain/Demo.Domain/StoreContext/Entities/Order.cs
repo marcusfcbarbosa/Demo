@@ -6,8 +6,9 @@ namespace Demo.Domain.StoreContext.Entities
 {
     public class Order : Entity
     {
+        private Order() { }
         public Order(User user, Product product, OrderStatus status, 
-            int quantity, string deliveryAddress)
+            int quantity, string deliveryAddress) :this()
         {
             Id = Guid.NewGuid();
             CreateAt = DateTime.Now;

@@ -68,7 +68,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Humanizer.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -2409,6 +2409,9 @@
           "Demo.Shared": "1.0.0",
           "FluentValidator": "2.0.4",
           "MediatR": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.13",
           "Microsoft.Extensions.Configuration.UserSecrets": "3.1.0"
         },
         "compile": {
