@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Demo.Domain.StoreContext.Commands.Inputs;
+using Demo.Shared.Commands;
+using Demo.Shared.Commands.Outputs;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Demo.WebApi.Controllers
@@ -12,5 +12,30 @@ namespace Demo.WebApi.Controllers
     public class UserController : ControllerBase
     {
 
+        private IMediator _mediator;
+        public UserController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpPost]
+        [Route("")]
+        public async Task<ICommandResult> Post([FromBody] CreateUserCommand command)
+        {
+            command.Validate();
+            if (command.Valid)
+                return await _mediator.Send(command);
+            return new CommandResult(false, "Errors", command.Notifications);
+        }
+
+        [HttpPut]
+        [Route("")]
+        public async Task<ICommandResult> Put([FromBody] UpdateUserCommand command)
+        {
+            command.Validate();
+            if (command.Valid)
+                return await _mediator.Send(command);
+            return new CommandResult(false, "Errors", command.Notifications);
+        }
     }
 }

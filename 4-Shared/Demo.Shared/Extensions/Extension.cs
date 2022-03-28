@@ -6,6 +6,56 @@ namespace Demo.Shared.Extensions
 {
     public static class Extension
     {
+        public static bool IsValidGuid(string guidString)
+        {
+            // Length of a proper GUID, without any surrounding braces.
+            const int len_without_braces = 36;
+
+            // Delimiter for GUID data parts.
+            const char delim = '-';
+
+            // Delimiter positions.
+            const int d_0 = 8;
+            const int d_1 = 13;
+            const int d_2 = 18;
+            const int d_3 = 23;
+
+            // Before Delimiter positions.
+            const int bd_0 = 7;
+            const int bd_1 = 12;
+            const int bd_2 = 17;
+            const int bd_3 = 22;
+
+            if (guidString == null)
+                return false;
+
+            if (guidString.Length != len_without_braces)
+                return false;
+
+            if (guidString[d_0] != delim ||
+                guidString[d_1] != delim ||
+                guidString[d_2] != delim ||
+                guidString[d_3] != delim)
+                return false;
+
+            for (int i = 0;
+                i < guidString.Length;
+                i = i + (i == bd_0 ||
+                        i == bd_1 ||
+                        i == bd_2 ||
+                        i == bd_3
+                        ? 2 : 1))
+            {
+                if (!IsHex(guidString[i])) return false;
+            }
+
+            return true;
+        }
+
+        private static bool IsHex(char c)
+        {
+            return ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F'));
+        }
         public static bool IsSocialSecurityNumber(this string cpf)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };

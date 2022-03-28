@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="StoreContext\Adapters\" />
-    <Folder Include="StoreContext\CommandHandlers\" />
     <Folder Include="StoreContext\Documents\" />
     <Folder Include="StoreContext\Models\" />
     <Folder Include="StoreContext\QueryHandlers\" />
