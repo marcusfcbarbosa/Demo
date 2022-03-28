@@ -8,9 +8,9 @@ namespace Demo.Shared.Interfaces
     {
         void Create(TEntity entity);
         bool Delete(TEntity entity);
-        void Delete(int id);
+        void Delete(Guid id);
         void Edit(TEntity entity);
-        TEntity GetById(int id);
+        TEntity GetById(Guid id);
         IEnumerable<TEntity> Filter();
         IEnumerable<TEntity> Filter(Func<TEntity, bool> predicate);
         void SaveChanges();
