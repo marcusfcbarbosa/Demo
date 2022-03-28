@@ -22,9 +22,6 @@
 		
 	</ItemGroup>
   <ItemGroup>
-    <Folder Include="NOSQLContexts\Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\2-Domain\Demo.Domain\Demo.Domain.csproj" />
   </ItemGroup>
 

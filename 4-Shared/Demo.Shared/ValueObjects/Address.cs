@@ -1,7 +1,10 @@
-﻿namespace Demo.Shared.ValueObjects
+﻿using System;
+
+namespace Demo.Shared.ValueObjects
 {
     public class Address
     {
+        public Guid Id { get; private set; }
         public int Number { get; set; }
         public string Neighborhood { get; set; }
         public string ZipCode { get; set; }
@@ -14,6 +17,7 @@
                        string state, string complement)
                         : this()
         {
+            Id = Guid.NewGuid();
             Number = number;
             Neighborhood = neighborhood;
             ZipCode = zipCode;
@@ -21,7 +25,5 @@
             State = state;
             Complement = complement;
         }
-
-
     }
 }

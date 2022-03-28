@@ -1,5 +1,9 @@
+using Demo.Domain.StoreContext.Commands.Inputs;
+using Demo.Domain.StoreContext.Interfaces;
 using Demo.Infra.NOSQLContexts;
+using Demo.Infra.NOSQLContexts.Repositories;
 using Demo.Infra.SQLContexts;
+using Demo.Infra.SQLContexts.Repositories.Users;
 using Demo.Shared.BackgroundTasks;
 using Demo.WebApi.Auth;
 using Demo.WebApi.InfraEstructure;
@@ -72,14 +76,16 @@ namespace Demo.WebApi
             #endregion
 
             #region"Repositórios"
-            //services.AddScoped<IPedidoRepository, PedidoRepository>();
-            //services.AddScoped<IMongoPedidoRepository, MongoPedidoRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IMongoUserRepository, MongoUserRepository>();
             #endregion
 
             #region"mediator"
             services.AddMediatR(Assembly.GetExecutingAssembly());
-            //services.AddMediatR(typeof(CriaPedidoCommand).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(CreateUserCommand).GetTypeInfo().Assembly);
             #endregion
+
+
             services.AddSingleton<BackgroundTask>();
         }
 
